@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,17 +41,17 @@
     </div> <!-- .topbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light">
-      <div class="container">
+      <div class="container" style="width: 100%; margin-right: -2px;">
+        <!-- <img src="{{ asset('images/philippines-flag.png') }}" alt="Philippines Flag" width="50px" style="vertical-align: middle; margin-right: 150px;"> -->
+        @include('layouts.realtime')
+       
+         
+            <div class="input-group-prepend">
+              <img src="{{ asset('images/philippines-flag.png') }}" alt="Philippines Flag" style="width:40px; height: auto; margin-left: 10px;">
+          </div>
+       
       <img src="../assets/img/person/svfctrans.png" alt="logo " style="width:auto; height: 60px;"/>
         <a class="navbar-brand" href="home"><span class="text-primary"><span style="color:#f204f2;">Clini</span></span>-QuickAid</a>
-        <!-- <form action="#">
-          <div class="input-group input-navbar">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="icon-addon1"style="color:#f204f2;"><span class="mai-search"></span></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Search..." aria-label="Username" aria-describedby="icon-addon1">
-          </div>
-        </form> -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

@@ -94,28 +94,28 @@
     </nav>
   </header>
 
-   <div align="center" style="padding:70px;">
+   <div align="center" style="padding:70px; ">
         
-      <table>
+      <table style="background-color: #AD1457;">
 
-          <tr style="background-color:#00D9A5;">
-            <th style="padding:10px; font-size:23px; color:white;">Doctor Name</th>
-            <th style="padding:10px; font-size:23px; color:white;">Date</th>
-            <th style="padding:10px; font-size:23px; color:white;"> Message </th>
-            <th style="padding:10px; font-size:23px; color:white;">Status</th>
-            <th style="padding:10px; font-size:23px; color:white;">Cancel Appointment</th>
+          <tr style="background-color:#AD1457; padding-right: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <th style="padding:20px 30px 30px 30px; font-size:23px; color:white;">Doctor Name</th>
+            <th style="padding:20px 30px 30px 30px; font-size:23px; color:white;">Date</th>
+            <th style="padding:20px 30px 30px 30px; font-size:23px; color:white;"> Message </th>
+            <th style="padding:20px 30px 30px 30px; font-size:23px; color:white;">Status</th>
+            <th style="padding:20px 30px 30px 30px; font-size:23px; color:white;">Cancel Appointment</th>
 
           </tr>
 
           @foreach($appoint as $appoints)
 
-          <tr style="background-color:violet;" align="center">
+          <tr style="background-color:black;" align="center">
             <td style="padding:10px; font-size:20px; color:white;">{{$appoints->doctor}}</td>
             <td style="padding:10px; font-size:20px; color:white;">{{$appoints->date}}</td>
             <td style="padding:10px; font-size:20px; color:white;">{{$appoints->message}}</td>
             <td style="padding:10px; font-size:20px; color:white;">{{$appoints->status}}</td>
             
-            <td><a class="bt btn-danger" onclick="return confirm('are you sure to cancel this')" href="{{url('cancel_appoint',$appoints->id)}}">Cancel</a></td>
+            <td><a class="btn" onclick="return confirm('are you sure to cancel this')" href="{{url('cancel_appoint',$appoints->id)}}" style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 18; background-color:red;">Cancel</a></td>
 
           </tr>
 

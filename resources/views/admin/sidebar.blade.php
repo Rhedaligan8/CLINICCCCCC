@@ -53,6 +53,14 @@
           <li class="nav-item nav-category">
             <span class="nav-link" style="color:white;">Navigation</span>
           </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('home')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title" style="color:white;">Users</span>
+            </a>
+          </li>
 
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('add_doctor_view')}}">
@@ -78,6 +86,14 @@
                 <i class="mdi mdi-file-document-box"></i>
               </span>
               <span class="menu-title" style="color:white;">All Doctors</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('#')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title" style="color:white;">Add Announcements</span>
             </a>
           </li>
 

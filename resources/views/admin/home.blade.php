@@ -7,6 +7,7 @@
 
   </head>
   <body>
+  <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background-color: #AD1457 ;">
       <!-- partial:partials/_sidebar.html -->
  
       @include('admin.sidebar')

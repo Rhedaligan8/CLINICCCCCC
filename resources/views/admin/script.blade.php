@@ -17,3 +17,13 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <script src="admin/assets/js/dashboard.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $(".view-message").click(function(){
+            var message = $(this).data("message");
+            $("#messageContent").text(message);
+            $("#messageModal").modal("show");
+        });
+    });
+    </script>

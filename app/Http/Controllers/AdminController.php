@@ -81,5 +81,13 @@ class AdminController extends Controller
 
       return redirect()->back();
     }
+
+    public function viewMessage($id)
+    {
+        $appointment = Appointment::findOrFail($id);
+        return response()->json(['message' => $appointment->message]);
+
+ }
+
 }
 

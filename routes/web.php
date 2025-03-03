@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
-
-
+use App\Http\Controllers\TimeController;
+use Carbon\Carbon;
 
 Route::get('/',[HomeController::Class,'index']);
 
@@ -40,3 +40,10 @@ Route::get('/showdoctor',[AdminController::Class,'showdoctor']);
 
 Route::get('/removedoctor/{id}',[AdminController::Class,'removedoctor']);
 
+Route::get('/view-message/{id}', [AdminController::class, 'viewMessage']);
+
+Route::get('/get-current-time', function () {
+    return response()->json([
+        'currentTime' => Carbon::now('Asia/Manila')->format('F j, Y h:i:s A')
+    ]);
+});
