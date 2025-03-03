@@ -57,6 +57,11 @@ class HomeController extends Controller
     public function appointment(Request $request)
     {
      
+        $request->validate([
+            'message'=> 'required|string|max:500',  // Prevents messages longer than 500 characters
+        ], [
+            'message.max' => 'Message is too long! Maximum 500 characters allowed.', // Custom error message
+        ]);
         $data = new appointment;
 
         $data->name=$request->name;

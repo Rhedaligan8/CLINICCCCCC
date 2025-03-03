@@ -10,14 +10,7 @@
     <div class="container-scroller">
       <div class="row p-0 m-0 proBanner" id="proBanner">
         <div class="col-md-12 p-0 m-0">
-          <div class="card-body card-body-padding d-flex align-items-center justify-content-between">
-            <div class="ps-lg-1">
-              <div class="d-flex align-items-center justify-content-between">
-              </div>
-            </div>
-            <div class="d-flex align-items-center justify-content-between">
-            </div>
-          </div>
+         
         </div>
       </div>  
       <!-- partial:partials/_sidebar.html -->
@@ -33,24 +26,25 @@
 
 
         <div class="container" align="center" style="padding-top:100px;">
+          <h1 style="font-size: 45px; padding-bottom: 42px;">Doctors Available</h1>
 
-        <table>
-            <tr style="background-color:#00D9A5" align="center">
-                <th style="padding:10px;">Doctor Name</th>
-                <th style="padding:10px;">Phone</th>
-                <th style="padding:10px;">Speciality</th>
-                <th style="padding:10px;">Image</th>
-                <th style="padding:10px;">Remove</th>
-                <th style="padding:10px;">Update</th>
+        <table class=" overflow-hidden rounded-md w-full">
+            <tr style="background-color:#AD1457" align="center">
+                <th style="padding:20px 70px 20px 20px;">Doctor Name</th>
+                <th style="padding:20px 50px 20px 20px;">Speciality</th>
+                <th style="padding:20px 50px 20px 20px;">Phone</th>
+                <th style="padding:20px;">Image</th>
+                <th style="padding:20px;">Remove</th>
+                <th style="padding:20px;">Update</th>
             
             </tr>
 
             @foreach($data as $doctor)
-              <tr style="background-color:violet;" align="center">
-                <td>{{$doctor->name}}</td>
-                <td>{{$doctor->phone}}</td>
-                <td>{{$doctor->speciality}}</td>
-                <td><img height="100" width="100" src="doctorimage/{{$doctor->image}}"></td>
+              <tr style="background-color:gray;" align="center">
+                <td style="padding:20px 70px 20px 20px;">{{$doctor->name}}</td>
+                <td style="padding:20px 50px 20px 20px;">{{$doctor->speciality}}</td>
+                <td style="padding:20px 50px 20px 20px;">{{$doctor->phone}}</td>
+                <td style="padding: 20px;"><img height="150" width="150" src="doctorimage/{{$doctor->image}}" class="rounded-md overflow-hidden"></td>
 
                 <td><a onclick="return confirm('are you sure to remove this')" class="btn btn-danger" href="{{url('removedoctor',$doctor->id)}}">Remove</a></td>
                 <td><a class="btn btn-primary" href="{{url('',$doctor->id)}}">Update</a></td>

@@ -9,18 +9,17 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('appointments', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
-            $table->string('email')->nullable();
-            $table->string('phone')->nullable();
-            $table->string('doctor')->nullable();
-            $table->string('date')->nullable();
+            $table->string('name');
+            $table->string('email');
+            $table->date('date');
+            $table->string('phone');
             $table->text('message')->nullable();
-            $table->string('status')->nullable();
-            $table->string('user_id')->nullable();
+            $table->string('doctor');
+            $table->string('status')->default('Pending');
             $table->timestamps();
         });
     }

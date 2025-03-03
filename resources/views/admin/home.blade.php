@@ -6,7 +6,7 @@
     @include('admin.css')
 
   </head>
- 
+  <body>
       <!-- partial:partials/_sidebar.html -->
  
       @include('admin.sidebar')

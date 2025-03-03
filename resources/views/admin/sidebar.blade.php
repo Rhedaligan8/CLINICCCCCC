@@ -10,7 +10,7 @@
                   
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal" style="color:white;">admin</h5>
+                  <h5 class="mb-0 font-weight-normal" style="color:white; font-size: 30px;">Admin</h5>
                 </div>
               </div>
               <a href="#" id="profile-dropdown" data-bs-toggle="dropdown"><i class="mdi mdi-dots-vertical" style="color:white;"></i></a>

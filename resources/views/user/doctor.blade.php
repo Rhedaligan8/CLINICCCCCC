@@ -1,6 +1,6 @@
 <div class="page-section">
     <div class="container">
-      <h1 class="text-center mb-5 wow fadeInUp">Our Doctors</h1>
+      <h1 class="text-center mb-5 wow fadeInUp" style="font-size: 35px; color: darkgreen; font-family: 'Times New Roman', Times, serif;">SVFC Doctors & Practitioner</h1>
       <div class="owl-carousel wow fadeInUp" id="doctorSlideshow">
        
        @foreach($doctor as $doctors) 

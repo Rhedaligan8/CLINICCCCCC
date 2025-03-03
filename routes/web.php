@@ -40,4 +40,3 @@ Route::get('/showdoctor',[AdminController::Class,'showdoctor']);
 
 Route::get('/removedoctor/{id}',[AdminController::Class,'removedoctor']);
 
-

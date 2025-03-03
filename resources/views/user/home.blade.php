@@ -128,7 +128,7 @@
         <span class="display-4 btn-headcolor" style="color:#f204f2;">CliniQuickAid</span><Br><br>
         <span class="subhead">your health</span>
         <h1 class="display-4" style="color: #00D9A5;">Deserves Quick Care</h1>
-        <a href="#" class="btn btn-primary" style="background-color:#f204f2;">Make Your Appointment Now!</a>
+        <a href="#appointment-section" class="btn btn-primary" style="background-color:#f204f2;">Make Your Appointment Now!</a>
       </div>
     </div>
   </div>
@@ -188,7 +188,9 @@
 
 @include('user.latest')
 
-@include('user.appointment')
+<div id="appointment-section">
+  @include('user.appointment')
+</div>
 
 </div> <!-- .page-section -->
 
@@ -208,7 +210,7 @@
         <div class="col-sm-6 col-lg-3 py-3">
           <h5>School Social Media's</h5>
           <ul class="footer-menu">
-            <li><a href="#">Facebook: &nbsp; <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a> </a></li>
+            <li><a href="https://www.facebook.com/SVFCofCamarinOfficialPage">Facebook: &nbsp; <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a> </a></li>
             <li><a href="#">Instagram &nbsp; <a href="#" target="_blank"><span class="mai-logo-instagram-f"></span></a></a></li>
             <li><a href="#">Viber &nbsp; <a href="#" target="_blank"><span class="mai-logo-viber-f"></span></a></a></li>
             <li><a href="#">Telephone: </span></a></a></li>
